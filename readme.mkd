@@ -21,7 +21,7 @@ Requires the following fonts:
 
 ## Colophon
 
-Copyright 2009 [Stefano Kindoblue][3]
+Copyright 2009 [Stefano Kindoblue][3]  
 Copyright 2012 [Tom Vincent][4]
 
   [1]: http://www.ctan.org/pkg/koma-script/
