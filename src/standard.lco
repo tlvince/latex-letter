@@ -1,10 +1,7 @@
 % vim: set ft=tex
-\ProvidesFile{standard.lco}[%
-  2002/07/09 v0.9a LaTeX2e unsupported letter-class-option]
- 
+\ProvidesFile{standard.lco}
 \usepackage{fontspec}
 \usepackage{marvosym}
-\usepackage{eso-pic}
 \usepackage[british, english]{babel}
  
 % ==============================================
@@ -49,20 +46,5 @@
   }\\
   {\Large\Letter} \usekomavar{fromemail} \ {\Large\Telefon} \usekomavar{fromphone}
 }
- 
-% === watermark settings
-\newcommand\BackgroundPicture{
-   \put(0,0){
-     \parbox[b][\paperheight]{\paperwidth}{
-       \vfill
-       \centering
-       \includegraphics[width=0.8\paperwidth,height=0.8\paperheight,%
-                        keepaspectratio]{src/sample_logo_transparent.svg}%
-       \vfill
-     }}}
- 
-% the picture is centered on the page background
-\AddToShipoutPicture{\BackgroundPicture}
- 
  
 \endinput
