@@ -9,9 +9,17 @@
 
 \KOMAoptions{fromalign=right, fromlogo=false, addrfield=true, backaddress=false,
              foldmarks=off, fromphone=false, fromemail=false, subject=titled,
-             subject=left
-} 
- 
+             subject=left, parskip=full, pagenumber=false, enlargefirstpage=true
+}
+
+% Unindent closing:
+% http://tex.stackexchange.com/questions/52730/
+\renewcommand*{\raggedsignature}{\raggedright}
+
+% Reduce empty space on first page:
+% http://tex.stackexchange.com/questions/17596
+\enlargethispage{3\baselineskip}
+
 % Fonts
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont{Adobe Garamond Pro}
@@ -39,5 +47,5 @@
     {\Large\Letter} \usekomavar{fromemail} \
     {\Large\Telefon} \usekomavar{fromphone}
 }
- 
+
 \endinput
