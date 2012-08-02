@@ -1,9 +1,11 @@
+% vim: set ft=tex
 \ProvidesFile{standard.lco}[%
   2002/07/09 v0.9a LaTeX2e unsupported letter-class-option]
  
 \usepackage{fontspec}
 \usepackage{marvosym}
 \usepackage{eso-pic}
+\usepackage[british, english]{babel}
  
 % ==============================================
 %  PERSONAL DATA
@@ -25,20 +27,20 @@
 % === font settings
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont {Adobe Garamond Pro}
-\setsansfont {Gill Sans}
+\setsansfont {Gill Sans Std}
  
 %set the font size and leading
 \renewcommand{\normalsize}{\fontsize{12.5}{17}\selectfont}
  
 % === header settings
-\firsthead{
+\setkomavar{firsthead}{
    \centering
          {\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
          \fontsize{21}{21}\selectfont\scshape Programmer and Architect at Initech
 }
- 
+
 % === footer settings
-\firstfoot{
+\setkomavar{firstfoot}{
   \centering
   \addfontfeature{LetterSpace=20.0}\scshape
   {
@@ -46,6 +48,7 @@
       \usekomavar{fromaddress}
   }\\
   {\Large\Letter} \usekomavar{fromemail} \ {\Large\Telefon} \usekomavar{fromphone}
+}
  
 % === watermark settings
 \newcommand\BackgroundPicture{
@@ -54,7 +57,7 @@
        \vfill
        \centering
        \includegraphics[width=0.8\paperwidth,height=0.8\paperheight,%
-                        keepaspectratio]{sample_logo_transparent.eps}%
+                        keepaspectratio]{src/sample_logo_transparent.svg}%
        \vfill
      }}}
  
