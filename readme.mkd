@@ -1,6 +1,6 @@
 # LaTeX letter
 
-Uses the scrlttr2 class of the fabulous [KOMA script][1] package. See the
+Uses the `scrlttr2` class of the fabulous [KOMA script][1] package. See the
 [documention][2] for more information.
 
 ## Dependencies
