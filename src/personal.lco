@@ -12,3 +12,4 @@
 \setkomavar{frombank}{Postbank 9307157}
 \setkomavar{place}{Amsterdam}
 \setkomavar{signature}{Iulius Caesar}
+\def \jobtitle {Programmer and Architect at Initech}

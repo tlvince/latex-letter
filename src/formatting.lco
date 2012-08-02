@@ -9,28 +9,30 @@
  
 % Fonts
 \defaultfontfeatures{Mapping=tex-text}
-\setmainfont {Adobe Garamond Pro}
-\setsansfont {Gill Sans Std}
+\setmainfont{Adobe Garamond Pro}
+\setsansfont{Gill Sans Std}
  
 % Font size and leading
 \renewcommand{\normalsize}{\fontsize{12.5}{17}\selectfont}
  
 % Header
 \setkomavar{firsthead}{
-   \centering
-         {\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
-         \fontsize{21}{21}\selectfont\scshape Programmer and Architect at Initech
+  \centering
+    {\addfontfeature{
+      LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape \usekomavar{fromname}
+    }\\[5mm]
+    \fontsize{21}{21}\selectfont\scshape \jobtitle
 }
 
 % Footer
 \setkomavar{firstfoot}{
   \centering
-  \addfontfeature{LetterSpace=20.0}\scshape
-  {
+    \addfontfeature{LetterSpace=20.0}\scshape {
       \renewcommand{\\}{\ {\large\textperiodcentered}\ }
       \usekomavar{fromaddress}
-  }\\
-  {\Large\Letter} \usekomavar{fromemail} \ {\Large\Telefon} \usekomavar{fromphone}
+    }\\
+    {\Large\Letter} \usekomavar{fromemail} \
+    {\Large\Telefon} \usekomavar{fromphone}
 }
  
 \endinput
