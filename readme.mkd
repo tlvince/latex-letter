@@ -1,5 +1,30 @@
 # LaTeX letter
 
-Based on work by [Stefano Kindoblue][1].
+Uses the scrlttr2 class of the fabulous [KOMA script][1] package. See the
+[documention][2] for more information.
 
-  [1]: http://stefano.italians.nl/archives/55
+## Dependencies
+
+* XeTeX
+* XeLaTeX
+* KOMA-Script
+
+Requires the following fonts:
+
+* Adobe Garamond Pro
+* Gill Sans Std
+
+... or try these open source alternatives:
+
+* EB Garamond
+* Gill Sans
+
+## Colophon
+
+Copyright 2009 [Stefano Kindoblue][3]
+Copyright 2012 [Tom Vincent][4]
+
+  [1]: http://www.ctan.org/pkg/koma-script/
+  [2]: http://mirror.ctan.org/macros/latex/contrib/koma-script/doc/scrguien.pdf
+  [3]: http://stefano.italians.nl/archives/55
+  [4]: http://tlvince.com/contact/
