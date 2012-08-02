@@ -6,6 +6,11 @@
 \usepackage{fontspec}
 \usepackage{marvosym}
 \usepackage[british, english]{babel}
+
+\KOMAoptions{fromalign=right, fromlogo=false, addrfield=true, backaddress=false,
+             foldmarks=off, fromphone=false, fromemail=false, subject=titled,
+             subject=left
+} 
  
 % Fonts
 \defaultfontfeatures{Mapping=tex-text}
