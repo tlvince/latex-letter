@@ -1,42 +1,28 @@
+% Formatting for letter template.
+% Copyright 2009 Stefano Kindoblue
+% Copyright 2012 Tom Vincent <http://tlvince.com/contact/>
 % vim: set ft=tex
-\ProvidesFile{standard.lco}
+
 \usepackage{fontspec}
 \usepackage{marvosym}
 \usepackage[british, english]{babel}
  
-% ==============================================
-%  PERSONAL DATA
-% ==============================================
-\setkomavar{fromname}{Iulius Caesar}
-\setkomavar{fromaddress}{Van Eeghenlaan 69\\1691QT Amsterdam\\Nederland}
-\setkomavar{fromphone}{+31 (0)22 7394203}
-\setkomavar{fromemail}{iulius@gmail.com}
-\setkomavar{fromfax}{+31 (0)71 5144543}
-\setkomavar{fromurl}{http://stefano.italians.nl}
-\setkomavar{frombank}{Postbank 9307157}
-\setkomavar{place}{Amsterdam}
-\setkomavar{signature}{Iulius Caesar}
- 
-% ==============================================
-%  FORMATTING STUFF
-% ==============================================
- 
-% === font settings
+% Fonts
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont {Adobe Garamond Pro}
 \setsansfont {Gill Sans Std}
  
-%set the font size and leading
+% Font size and leading
 \renewcommand{\normalsize}{\fontsize{12.5}{17}\selectfont}
  
-% === header settings
+% Header
 \setkomavar{firsthead}{
    \centering
          {\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
          \fontsize{21}{21}\selectfont\scshape Programmer and Architect at Initech
 }
 
-% === footer settings
+% Footer
 \setkomavar{firstfoot}{
   \centering
   \addfontfeature{LetterSpace=20.0}\scshape
