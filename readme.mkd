@@ -1,0 +1,5 @@
+# LaTeX letter
+
+Based on work by [Stefano Kindoblue][1].
+
+  [1]: http://stefano.italians.nl/archives/55
