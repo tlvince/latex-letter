@@ -1,65 +1,19 @@
-\ProvidesFile{standard.lco}[%
-  2002/07/09 v0.9a LaTeX2e unsupported letter-class-option]
+\documentclass[standard]{scrlttr2}
  
-\usepackage{fontspec}
-\usepackage{marvosym}
-\usepackage{eso-pic}
+\begin{document}
  
-% ==============================================
-%  PERSONAL DATA
-% ==============================================
-\setkomavar{fromname}{Iulius Caesar}
-\setkomavar{fromaddress}{Van Eeghenlaan 69\\1691QT Amsterdam\\Nederland}
-\setkomavar{fromphone}{+31 (0)22 7394203}
-\setkomavar{fromemail}{iulius@gmail.com}
-\setkomavar{fromfax}{+31 (0)71 5144543}
-\setkomavar{fromurl}{http://stefano.italians.nl}
-\setkomavar{frombank}{Postbank 9307157}
-\setkomavar{place}{Amsterdam}
-\setkomavar{signature}{Iulius Caesar}
- 
-% ==============================================
-%  FORMATTING STUFF
-% ==============================================
- 
-% === font settings
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont {Adobe Garamond Pro}
-\setsansfont {Gill Sans Std}
- 
-%set the font size and leading
-\renewcommand{\normalsize}{\fontsize{12.5}{17}\selectfont}
- 
-% === header settings
-\firsthead{
-   \centering
-         {\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
-         \fontsize{21}{21}\selectfont\scshape Programmer and Architect at Initech
+\begin{letter}{%
+       Damage Inc. --- HR Dept.\\%
+       Paulus Potterstraat 134\\%
+       1753KJ Amsterdam
 }
+\setkomavar{subject}{Cover Letter}
+\opening{Dear Recruiter,}
  
-% === footer settings
-\firstfoot{
-  \centering
-  \addfontfeature{LetterSpace=20.0}\scshape
-  {
-      \renewcommand{\\}{\ {\large\textperiodcentered}\ }
-      \usekomavar{fromaddress}
-  }\\
-  {\Large\Letter} \usekomavar{fromemail} \ {\Large\Telefon} \usekomavar{fromphone}
+My name is Iulius Caesar bla bla bla...
  
-% === watermark settings
-\newcommand\BackgroundPicture{
-   \put(0,0){
-     \parbox[b][\paperheight]{\paperwidth}{
-       \vfill
-       \centering
-       \includegraphics[width=0.8\paperwidth,height=0.8\paperheight,%
-                        keepaspectratio]{sample_logo_transparent.eps}%
-       \vfill
-     }}}
- 
-% the picture is centered on the page background
-\AddToShipoutPicture{\BackgroundPicture}
+\closing{Regards}
  
  
-\endinput
+\end{letter}
+\end{document}

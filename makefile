@@ -1,11 +1,11 @@
 out=build
 
-all: pdflatex
+all: build
 
-pdflatex:
-	pdflatex -output-directory=$(out) $(doc)
+build:
+	xelatex -output-directory=$(out) $(doc)
 
 clean:
 	rm -rf $(out)
 
-.PHONY: all pdflatex clean
+.PHONY: all build clean
