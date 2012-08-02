@@ -25,7 +25,7 @@
 % === font settings
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont {Adobe Garamond Pro}
-\setsansfont {Gill Sans Std}
+\setsansfont {Gill Sans}
  
 %set the font size and leading
 \renewcommand{\normalsize}{\fontsize{12.5}{17}\selectfont}
